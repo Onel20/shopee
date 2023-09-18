@@ -1,0 +1,292 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 125px;
+    background-image: linear-gradient(-180deg,#f53d2d,#f63);
+    margin: 0 auto;
+    top: 0;
+}
+
+div.clear {
+    width: 100%;
+    height: 125px;
+}
+
+header nav.top {
+    width: 570px;
+    height: 25px;
+    margin-left: 210px;
+    /* background-color: aqua; */
+}
+
+header nav.top nav.left {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    align-items: flex-end;
+    color: white;
+}
+
+header nav.top nav.left a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav.top {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1120px;
+}
+
+header nav.top nav.right {
+    width: 450px;
+    height: 25px;
+    /* background-color: yellow; */
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    color: white;
+}
+
+header nav.top nav.right a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav.bottom {
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header nav.bottom nav.left {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    margin-left: 210px;
+    /* background-color: yellow; */
+}
+
+header nav.bottom nav.left {
+    width: 200px;
+    height: 100px;
+}
+
+header nav.bottom nav.left a img {
+    display: flex;
+    width: 200px;
+    height: 100px;
+}
+
+header nav.bottom nav.middle {
+    width: 800px;
+    height: 75px;
+    margin-left: 25px;
+    /* background-color: blue; */
+}
+
+header nav.bottom nav.middle input.search_entry {
+    width: 740px;
+    height: 35px;
+    border-radius: 5px;
+    ;
+}
+
+header nav.bottom nav.middle div.search_bar {
+    background-color: white;
+    display: flex;
+    margin-top: 27.5px;
+    height: 45px;
+    width: 800px;
+    border-radius: 3px;
+}
+
+header nav.bottom nav.middle div.search_bar input.search_button {
+    width: 60px;
+    height: 35px;
+    padding: 10px;
+    border: none;
+    background-color: #f63;
+    border-radius: 3px;
+    margin: 5px 10px 5px 0;
+}
+
+header nav.bottom nav.middle div.search_bar input.search_entry {
+    border: none;
+    margin: 5px 0 5px 0;
+}
+
+header nav.bottom nav.middle div.product {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    height: 25px;
+    width: 800px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    word-spacing: 3px;
+}
+
+header nav.bottom nav.middle div.product a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav.bottom nav.right a img {
+    height: 50px;
+    width: 50px;
+    padding: 25px;
+}
+
+.item1 { grid-area: main; }
+.item2 { grid-area: top; }
+.item3 { grid-area: bottom; }
+
+.container {
+    display: grid;
+    grid-template-areas:
+    'main main top'
+    'main main bottom' ;
+    gap: 10px;
+    /* background-color: blueviolet; */
+    padding: 10px;
+    margin: 25px 200px 0 200px;
+}
+
+.container > div {
+    /* background-color: greenyellow; */
+    padding: 60px 0;
+}
+
+.item1 {
+    background-image: url(shopee_1.png);
+    background-size: 100% 100%;
+}
+
+.item2 {
+    background-image: url(shopee_2.png);
+    background-size: 100% 100%;
+}
+
+.item3 {
+    background-image: url(shopee_3.png);
+    background-size: 100% 100%;
+}
+
+.more_container {
+    display: flex;
+    width: 1120px;
+    height: 112px;
+    /* background-color: violet; */
+    margin: 0 auto;
+}
+
+.more_container a {
+    margin: 20px 10px 0 10px;
+    height: 80px;
+    /* background-color: aqua; */
+}
+
+.more_container a div {
+    width: 92px;
+    height: 50px;
+}
+
+.more_container a:hover {
+    transform: translatey(-2px);
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+    background-repeat: no-repeat;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12.5px;
+    background-size: 50px;
+    background-position: center 0;
+}
+
+.one {
+    width: 112px;
+    height: 112px;
+    /* background-color: red; */
+    background-image: url(img1.png);
+}
+
+.two {
+    width: 112px;
+    height: 112px;
+    /* background-color: orange; */
+    background-image: url(img2.png);
+}
+
+.three {
+    width: 112px;
+    height: 112px;
+    /* background-color: yellow; */
+    background-image: url(img3.png);
+}
+
+.four {
+    width: 112px;
+    height: 112px;
+    /* background-color: yellowgreen; */
+    background-image: url(img4.png);
+}
+
+.five {
+    width: 112px;
+    height: 112px;
+    /* background-color: green; */
+    background-image: url(img5.png);
+}
+
+.six {
+    width: 112px;
+    height: 112px;
+    /* background-color: blue; */
+    background-image: url(img6.png);
+}
+
+.seven {
+    width: 112px;
+    height: 112px;
+    /* background-color: navy; */
+    background-image: url(img7.png);
+}
+
+.eight {
+    width: 112px;
+    height: 112px;
+    /* background-color: blueviolet; */
+    background-image: url(img8.png);
+}
+
+.nine {
+    width: 112px;
+    height: 112px;
+    /* background-color: rebeccapurple; */
+    background-image: url(img9.png);
+}
+
+.ten {
+    width: 112px;
+    height: 112px;
+    /* background-color: purple; */
+    background-image: url(img10.png);
+}
+
+div.test {
+    height: 9999px;
+    width: 100%;
+    background-color: saddlebrown;
+}
